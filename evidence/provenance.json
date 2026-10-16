@@ -1,0 +1,18 @@
+{
+  "source": "World Food Programme via HDX",
+  "url": "https://data.humdata.org/dataset/wfp-food-prices-for-bangladesh",
+  "license": "CC BY-IGO",
+  "retrieved": "2026-10-16",
+  "raw_sha256": "4932036a3e393087338448eb3a8c3de629b8d30c8d8e40c113c056999dea2ad9",
+  "raw_rows": 34468,
+  "selected_rows": 13450,
+  "series": 361,
+  "last_month": "2026-08",
+  "first_month": "2008-01",
+  "flags": {
+    "aggregate": 9162,
+    "actual": 4285,
+    "actual,aggregate": 3
+  },
+  "method": "Monthly Retail BDT, four named commodities; exclude Division pseudo-markets; exact KG/L units. Keep actual and aggregate flags, no invented observations. Missing months stay missing. Seven lag/season features; target next-month price / last-month price. Fixed chronological train/6-month validation/12-month test per commodity. Select by validation MAE only; fit once before test; rolling test uses preceding observed lags. Refit on all data for next-month snapshot forecasts. Historical snapshot may include revisions; this is not vintage-safe operational backtesting. Markets share one commodity model; MAE is pooled, not guaranteed per market."
+}
